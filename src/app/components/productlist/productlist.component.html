@@ -1,0 +1,28 @@
+<div class="product-list" id="productList">
+  <div class="card card-flex-row" *ngFor="let product of products">
+    <img class="card-img-top img-card" src="http://via.placeholder.com/350x150" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{product.productTitle}}</h5>
+      <p class="card-text">{{product.productDesc}}</p>
+
+      <p class="">Qunatity :  {{product.productAvalQuantity}}</p>
+      <a href="javascript:void(0)" class="btn btn-primary" (click)="addToCart(product)">Add to Cart</a>
+
+      <div class="quantity-tools">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" (click)="incQuantity(product)"><i class="material-icons">add</i></button>
+            <button class="btn btn-outline-secondary" type="button" (click)="decQuantity(product)"><i class="material-icons">remove</i></button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  
+  </div>
+
+ 
+</div>

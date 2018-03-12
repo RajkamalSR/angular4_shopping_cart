@@ -1,0 +1,20 @@
+.product-list{
+    width:50%;
+}
+
+.card{
+    margin-bottom: 5px;
+}
+
+.card.card-flex-row{
+    flex-direction: row;
+}
+
+img.img-card{
+    width:240px;
+}
+
+.quantity-tools{
+    float: right;
+    width:50%;
+}
